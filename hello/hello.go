@@ -1,8 +1,14 @@
+// Source: https://golang.org/doc/code.html
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "go/stringutil"
+)
 
 func main() {
-   fmt.Printf("Hello, world.\n")
+    var msg string = "Hello, world"
+    fmt.Printf(msg + "\n")
+    fmt.Printf(stringutil.Reverse(msg) + "\n")
 }
 
